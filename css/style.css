@@ -75,7 +75,49 @@ img{
 
 
 /* MEDIA QUERY: IF SCREEN SIZE > 420px */
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 420px){
+
+  /* COMMONS */
+  .row::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  /* /COMMONS */
+  
+  /* BLOCCO LEZIONI */
+  #lezioni{
+    background-color: lightpink;
+  }
+
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    width: 50%;
+    float: left;
+  }
+  /* /BLOCCO LEZIONI */
+
+  /* BLOCCO STEPS */
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    float: left;
+    width: 33%;
+  }
+  /* /BLOCCO STEPS */
+
+  /* BLOCCO PERCHE */
+  #why {
+    background-color: lightpink;
+  }
+  /* BLOCCO PERCHE */
+}
+/* /MEDIA QUERY */
+
+
+
+/* MEDIA QUERY: IF SCREEN SIZE > 1020px */
+@media screen and (min-width: 1020px) {
   /* COMMONS */
   .row {
     width: 992px;
